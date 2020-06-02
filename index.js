@@ -25,12 +25,14 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "What is the projects title?"
+        message: "What is the projects title?",
+        default: "Read me Generator"
     },
     {
         type: "input",
         name: "Description",
-        message: "Please write a short description."
+        message: "Please write a short description.",
+        default: " For this project we were suppose to create a command-line application that dynamically generates a README.md from a user's input. When you type in the command node index.js it will prompt you through a series of questions that the answers are going to creat the README."
     },
     {
         type: "list",
@@ -54,12 +56,14 @@ const questions = [
     {
         type: "input",
         name: "Usage",
-        message: "What does the user need to know about using the repo?"
+        message: "What does the user need to know about using the repo?",
+        default: " When you type in node index.js into the terminal, the questions and answers will dynamically create the ReadMe. "
     },
     {
         type: "input",
         name: "Contributing",
-        message: "What does the user need to know about who is contributing to the repo?"
+        message: "What does the user need to know about who is contributing to the repo?",
+        default: "There was only one contributor in this project"
     },
 ];
 

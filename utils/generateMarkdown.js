@@ -2,7 +2,7 @@ function generateMarkdown(data) {
   return `
 # ${data.title}
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](${data.URL})
-[![GitHub contributors](https://img.shields.io/github/contributors/(${data.name}/HW-9-README-Generator.svg)](${data.URL})
+[![GitHub contributors](https://img.shields.io/github/contributors/${data.name}/HW-9-README-Generator.svg)](${data.URL})
 
 ## Description
 
