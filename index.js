@@ -20,6 +20,7 @@ const questions = [
         type: "input",
         name: "URL",
         message: "What is the URL for your project?",
+        default: "https://github.com/yuliatikhonova/HW-9-README-Generator"
     },
     {
         type: "input",
@@ -40,13 +41,15 @@ const questions = [
     {
         type: "input",
         name: "Installation",
-        message: "What commands to run to install dependencies?"
+        message: "What commands to run to install dependencies?",
+        default: "npm i"
     },
 
     {
         type: "input",
         name: "Tests",
-        message: "What commands to run a test?"
+        message: "What commands to run a test?",
+        default: "npm run test"
     },
     {
         type: "input",
@@ -63,7 +66,7 @@ const questions = [
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function (err) {
         if (err) { return console.log(err); }
-        console.log("You got it Girl!");
+        console.log("You got it Girl or Boy!");
     });
 
 }
